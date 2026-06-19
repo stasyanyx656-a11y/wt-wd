@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroTech Hub - Lab 15</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>AeroTech Hub</h1>
+            <p>Лабораторна робота №15 - Інтерактивність (Vanilla JS)</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Section 1: Greeting -->
+        <section class="card">
+            <h2>1. Привітання користувача</h2>
+            <div class="input-group">
+                <input type="text" id="userNameInput" placeholder="Введіть ваше ім'я..." autocomplete="off">
+                <button id="greetBtn" class="btn">Привітатися</button>
+            </div>
+            <div id="greetOutput" class="output-message hidden"></div>
+        </section>
+
+        <!-- Section 2: Registration Validation -->
+        <section class="card">
+            <h2>2. Валідація форми реєстрації</h2>
+            <form id="registerForm" class="form-layout" novalidate>
+                <div class="input-group">
+                    <input type="email" id="emailInput" placeholder="Email" required autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="passwordInput" placeholder="Пароль" required autocomplete="off">
+                </div>
+                <button type="submit" class="btn btn-primary">Зареєструватися</button>
+                <div id="formMessage" class="output-message hidden"></div>
+            </form>
+        </section>
+
+        <!-- Section 3: Modal Window -->
+        <section class="card center-content">
+            <h2>3. Модальне вікно</h2>
+            <p>Натисніть кнопку нижче, щоб відкрити інформаційне модальне вікно.</p>
+            <button id="openModalBtn" class="btn btn-secondary">Відкрити інформацію</button>
+        </section>
+
+        <!-- Section 4: Todo List -->
+        <section class="card">
+            <h2>4. Список завдань (Todo)</h2>
+            
+            <div class="input-group">
+                <input type="text" id="todoInput" placeholder="Що потрібно зробити?" autocomplete="off">
+                <button id="addTodoBtn" class="btn">Додати</button>
+            </div>
+
+            <div class="filter-group">
+                <button class="btn btn-filter active" data-filter="all">Усі</button>
+                <button class="btn btn-filter" data-filter="active">Активні</button>
+                <button class="btn btn-filter" data-filter="done">Виконані</button>
+            </div>
+
+            <ul id="taskList" class="todo-list">
+                <!-- Todo items will be rendered here -->
+            </ul>
+        </section>
+
+        <!-- Section 5: Product Cards -->
+        <section class="card">
+            <h2>5. Картки товарів</h2>
+            <div class="products-grid">
+                
+                <div class="product-card">
+                    <div class="product-img placeholder-img">🎧</div>
+                    <h3>Бездротові навушники X-Pro</h3>
+                    <p class="price">₴ 3,200</p>
+                    <button class="btn btn-outline toggle-details-btn">Детальніше</button>
+                    <div class="details hidden">
+                        Чудові навушники з активним шумозаглушенням (ANC), до 30 годин автономної роботи та підтримкою швидкого заряджання. Ідеальні для подорожей та офісу.
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img placeholder-img">💻</div>
+                    <h3>Ноутбук AeroBook 14</h3>
+                    <p class="price">₴ 45,000</p>
+                    <button class="btn btn-outline toggle-details-btn">Детальніше</button>
+                    <div class="details hidden">
+                        Ультратонкий ноутбук з процесором останнього покоління. 16 ГБ оперативної пам'яті, 512 ГБ SSD та приголомшливий 2K дисплей.
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img placeholder-img">📱</div>
+                    <h3>Смартфон TechPhone 15</h3>
+                    <p class="price">₴ 28,500</p>
+                    <button class="btn btn-outline toggle-details-btn">Детальніше</button>
+                    <div class="details hidden">
+                        Флагманський смартфон з неймовірною потрійною камерою, потужним процесором та OLED-екраном на 120 Гц. Батарея тримає до двох діб.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- The Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="closeModalIcon" class="close-icon">&times;</button>
+            <h2>Інформаційне повідомлення</h2>
+            <p>Це модальне вікно створено засобами Vanilla JS. Воно закривається трьома способами:</p>
+            <ul>
+                <li>Кліком на "хрестик" або кнопку "Закрити".</li>
+                <li>Натисканням клавіші <strong>Escape</strong>.</li>
+                <li>Кліком по темній області (overlay) поза цим вікном.</li>
+            </ul>
+            <button id="closeModalBtn" class="btn btn-secondary mt-15">Закрити</button>
+        </div>
+    </div>
+
+</body>
+</html>

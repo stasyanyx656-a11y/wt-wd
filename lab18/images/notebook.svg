@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#laptopGrad)"/>
+  <!-- Laptop screen -->
+  <rect x="25" y="30" width="50" height="32" rx="2" fill="#1e293b" stroke="#ffffff" stroke-width="2"/>
+  <!-- Screen content reflection -->
+  <path d="M26 31 L60 31 L26 60 Z" fill="rgba(255,255,255,0.05)"/>
+  <!-- Keyboard base -->
+  <path d="M15 65 L85 65 L80 72 L20 72 Z" fill="#e2e8f0"/>
+  <!-- Trackpad -->
+  <rect x="44" y="66" width="12" height="4" rx="1" fill="#cbd5e1"/>
+  <!-- Logo -->
+  <circle cx="50" cy="46" r="3" fill="#6366f1"/>
+</svg>

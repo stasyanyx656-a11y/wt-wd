@@ -1,0 +1,11 @@
+{
+  "name": "lab06-audit",
+  "version": "1.0.0",
+  "description": "Скрипт для автоматизованого аудиту коду Лабораторної 18",
+  "main": "audit.js",
+  "scripts": {
+    "test": "node audit.js"
+  },
+  "author": "AeroTech Hub",
+  "license": "ISC"
+}

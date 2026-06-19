@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization -->
+    <title>AeroTech Store - Преміальні гаджети та ноутбуки майбутнього</title>
+    <meta name="description" content="Інтернет-магазин AeroTech: широкий вибір інноваційних ноутбуків, смартфонів, навушників та інших гаджетів преміум класу з безкоштовною доставкою.">
+    <meta name="keywords" content="AeroTech, купити ноутбук, флагманський смартфон, бездротові навушники, розумні годинники, гаджети, інтернет-магазин техніки">
+    <meta name="author" content="AeroTech Inc.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="styles_optimized.css">
+    <!-- Google Fonts Preconnect & loading optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. Навігаційне меню (Navbar) -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a class="navbar-brand" href="#">AeroTech Store</a>
+            <button class="navbar-toggle-btn" id="menuToggle" aria-label="Відкрити меню навігації">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Головний блок (Hero Section) -->
+    <header class="hero-section">
+        <div class="container hero-container">
+            <h1 class="hero-title">Інноваційні технології майбутнього</h1>
+            <p class="hero-subtitle">Відкрийте для себе нову еру продуктивності з нашою ексклюзивною лінійкою гаджетів AeroTech.</p>
+            <div class="hero-actions">
+                <a href="#catalog" class="btn btn-primary">Купити зараз</a>
+                <button class="btn btn-outline" id="openInfoModal">Детальніше</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Картки товарів у сітці (Cards & Grid) -->
+    <main class="container catalog-section" id="catalog">
+        <h2 class="section-title">Каталог товарів</h2>
+        <div class="products-grid">
+            <!-- Товар 1 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="images/notebook.svg" alt="Ноутбук AeroBook Ultra 14" loading="lazy" width="350" height="200">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">AeroBook Ultra 14"</h3>
+                    <p class="card-desc">Надлегкий ноутбук з процесором наступного покоління для розробників.</p>
+                    <div class="card-footer">
+                        <span class="price">45 999 ₴</span>
+                        <button class="btn btn-primary btn-buy" data-product="AeroBook Ultra 14&quot;">Придбати</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Товар 2 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="images/phone.svg" alt="Смартфон AeroPhone Pro Max" loading="lazy" width="350" height="200">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">AeroPhone Pro Max</h3>
+                    <p class="card-desc">Смартфон з професійною оптикою та дисплеєм 120 Гц для найкращих знімків.</p>
+                    <div class="card-footer">
+                        <span class="price">38 499 ₴</span>
+                        <button class="btn btn-primary btn-buy" data-product="AeroPhone Pro Max">Придбати</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Товар 3 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="images/headphones.svg" alt="Навушники AeroPods Max 2" loading="lazy" width="350" height="200">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">AeroPods Max 2</h3>
+                    <p class="card-desc">Студійний звук та досконале активне шумозаглушення для вашої творчості.</p>
+                    <div class="card-footer">
+                        <span class="price">12 800 ₴</span>
+                        <button class="btn btn-primary btn-buy" data-product="AeroPods Max 2">Придбати</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Товар 4 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="images/watch.svg" alt="Розумний годинник AeroWatch Active 3" loading="lazy" width="350" height="200">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">AeroWatch Active 3</h3>
+                    <p class="card-desc">Розумний годинник з розширеними функціями трекінгу показників здоров'я.</p>
+                    <div class="card-footer">
+                        <span class="price">6 999 ₴</span>
+                        <button class="btn btn-primary btn-buy" data-product="AeroWatch Active 3">Придбати</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Товар 5 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="images/tablet.svg" alt="Планшет AeroTab Studio 11" loading="lazy" width="350" height="200">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">AeroTab Studio 11"</h3>
+                    <p class="card-desc">Потужний планшет для малювання та роботи з графікою зі зручним стилусом.</p>
+                    <div class="card-footer">
+                        <span class="price">21 200 ₴</span>
+                        <button class="btn btn-primary btn-buy" data-product="AeroTab Studio 11&quot;">Придбати</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Товар 6 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="images/powerbank.svg" alt="Зарядна станція AeroPower Base 30K" loading="lazy" width="350" height="200">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">AeroPower Base 30K</h3>
+                    <p class="card-desc">Швидка зарядна станція великої ємності з портами USB-C Power Delivery.</p>
+                    <div class="card-footer">
+                        <span class="price">3 500 ₴</span>
+                        <button class="btn btn-primary btn-buy" data-product="AeroPower Base 30K">Придбати</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- 4. Форма зворотного зв'язку (Feedback Form) -->
+    <section class="feedback-section" id="contact">
+        <div class="container form-container">
+            <h2 class="form-title">Зворотній зв'язок</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Ваше ім'я</label>
+                    <input type="text" id="contactName" required placeholder="Іван Іванов">
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email адреса</label>
+                    <input type="email" id="contactEmail" required placeholder="example@domain.com">
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Повідомлення</label>
+                    <textarea id="contactMessage" rows="4" required placeholder="Ваше запитання чи пропозиція..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Надіслати повідомлення</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 5. Footer (Підвал сторінки) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 AeroTech Store. Усі права захищено.</p>
+            <small class="author-info">Лабораторна робота №18 (Оптимізована) | Виконав: Студент</small>
+        </div>
+    </footer>
+
+    <!-- 6. Модальні вікна (Modals) -->
+    <!-- Модалка інформації -->
+    <div id="infoModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Про компанію AeroTech</h3>
+                <span class="modal-close-cross">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Компанія AeroTech розробляє передові технологічні рішення з 2020 року. Наші товари поєднують високу продуктивність, мінімалістичний дизайн та виняткову екологічність матеріалів.</p>
+                <p>Цей сайт повністю оптимізовано: підключено сучасні векторні SVG зображення, додано SEO-метатеги, налаштовано відкладене завантаження (lazy loading) та правильні розміри медіа для запобігання зміщення макету (CLS).</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-btn">Закрити</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка покупки -->
+    <div id="buyModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Замовлення товару</h3>
+                <span class="modal-close-cross">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Ви обрали товар: <strong id="modalProductTitle">...</strong></p>
+                <p>Для оформлення замовлення, будь ласка, підтвердіть покупку. Наш менеджер зв'яжеться з вами найближчим часом.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-close-btn">Скасувати</button>
+                <button class="btn btn-success" id="confirmBuyBtn">Підтвердити замовлення</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script loading optimization (defer) -->
+    <script src="script_optimized.js" defer></script>
+</body>
+</html>

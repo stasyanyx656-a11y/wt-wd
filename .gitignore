@@ -1,0 +1,6 @@
+*.docx
+*.pdf
+звіти/
+docx_builder/
+push_labs.js
+node_modules/

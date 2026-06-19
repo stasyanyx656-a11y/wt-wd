@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tabletGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#tabletGrad)"/>
+  <!-- Tablet Body -->
+  <rect x="25" y="20" width="50" height="60" rx="4" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="28" y="24" width="44" height="52" rx="2" fill="#1e293b"/>
+  <!-- Camera -->
+  <circle cx="50" cy="22" r="1" fill="#ffffff"/>
+  <!-- Stylus Pen -->
+  <line x1="68" y1="28" x2="78" y2="18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M78 18 L76 20 Z" stroke="#3b82f6" stroke-width="1"/>
+</svg>
